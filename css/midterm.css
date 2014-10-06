@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding:0;
+	margin:0;
+}	
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+	background-color: #666;
+}
+
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #000;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: Pacifico;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: Noto Serif;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: Noto Serif;
+	color: #494949;	
+}
+
+p, li, a{
+	font-weight: 400;
+	font-family: Open Sans;
+	color: #555;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+
+@media (min-width: 1081px) {
+	.wrapper{
+		/*background-color: #4ad353;	*/
+        /*overflow: hidden;*/
+       /* background-color: #3f8635;*/
+        overflow: hidden;
+        background-color: #93d397;
+	}
+ 
+    
+	.masthead{
+		
+	}
+	.nav{
+		margin-left: 15px;
+        
+	}
+	.navbar{
+        float:left;
+        background-color: #68A068;
+
+	}
+	.main{
+        /*border-left: 1px solid #d4d4d4;*/
+		float: left;
+		width:30%;
+        
+	}
+    
+    
+
+	.two{
+        /*border-left: 1px solid #d4d4d4;*/
+		float: left;
+		width:240px;
+      
+  
+	}
+ 
+	.three{
+       /* border-left: 1px solid #d4d4d4;*/
+		float: left;
+		width: 240px;
+	}
+
+	.sidebar{
+		
+	}
+	.footer{
+		clear:both;
+	}
+	.navbar li{
+		/*float:left;	*/
+		width: 240px;  /* 960/4 = 240  works if the layout is 960*/
+		list-style:none;
+	}
+}
+
+@media (min-width: 720px) and (max-width: 1080px) {
+		.wrapper{
+	/*	background-color: #fff;	*/
+            background-color: #93d397;
+            overflow: hidden;
+	}
+	.masthead{
+		
+	}
+	.nav{
+		overflow: hidden;
+        background-color: #68A068;
+	}
+	.navbar{
+        /*background-color: #68A068;*/
+       
+	}
+	.main{
+		float: left;
+		width:33%;
+		max-width:300px;
+		
+	}
+	.two{
+		float: left;
+		width:33%;
+	}
+	.three{
+		float: right;
+		width:33%;
+	}
+	.sidebar{
+		
+	}
+	.footer{
+		clear: both;
+	}
+	.navbar li{
+		float:left;
+		width: 25%;  /* 960/4 = 240  works if the layout is 960*/
+		list-style:none;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 719px) {
+		.wrapper{
+		/*background-color: #fff;	*/
+            background-color: #93d397;
+            overflow: hidden;
+	}
+	.masthead{
+		
+	}
+	.nav{
+        overflow: hidden;
+        background-color: #68A068;
+	}
+	.navbar{
+	}
+	.main{
+		clear: both;
+		
+	}
+	.two{
+		float: left;
+		width:50%;
+	}
+	.three{
+		float: left;
+		width:50%;
+	}
+	.sidebar{
+		
+	}
+	.footer{
+		clear: both;
+	}
+	.navbar li{
+		float:left;
+		width: 25%;  /* 960/4 = 240  works if the layout is 960*/
+		list-style:none;
+	}
+}
+
+@media (max-width: 499px) {
+		.wrapper{
+		/*background-color: #fff;	*/
+            overflow: hidden;
+            background-color: #93d397;
+	}
+	.masthead{
+		
+	}
+	.nav{
+        overflow: hidden;
+        background-color: #68A068;
+	}
+	.navbar{
+            background-color: #68A068;
+	}
+	.main{
+		clear: both;
+		width:100%;
+	}
+	.two{
+		clear: both;
+		width:100%;
+	}
+	.three{
+		clear: both;
+		width:100%;
+	}
+	.sidebar{
+		
+	}
+	.footer{
+		clear: both;
+	}
+	.navbar li{
+		float:left;
+		width: 50%;  /* 960/4 = 240  works if the layout is 960*/
+		list-style:none;
+	}	
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #1D5321;
+
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	/*background-color: #333;*/
+    background-color: #1D5321;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #e4e4e4;
+}
