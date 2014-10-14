@@ -113,7 +113,6 @@ a{
 		clear:both;
 	}
 	.navbar li{
-		/*float:left;	*/
 		width: 240px;  /* 960/4 = 240  works if the layout is 960*/
 		list-style:none;
 	}
@@ -130,12 +129,19 @@ a{
 	}
 	.nav{
 		overflow: hidden;
-        background-color: #68A068;
 	}
 	.navbar{
-        /*background-color: #68A068;*/
-       
+        background-color: #68A068;
 	}
+	.navbar:after{
+	  visibility: hidden;
+	  display: block;
+	  font-size: 0;
+	  content: "\0020";
+	  clear: both;
+	  height: 0;
+	}
+
 	.main{
 		float: left;
 		width:33%;
@@ -174,10 +180,19 @@ a{
 	}
 	.nav{
         overflow: hidden;
-        background-color: #68A068;
+        
 	}
 	.navbar{
+		background-color: #68A068;
 	}
+	.navbar:after{
+	  visibility: hidden;
+	  display: block;
+	  font-size: 0;
+	  content: "\0020";
+	  clear: both;
+	  height: 0;
+	}	
 	.main{
 		clear: both;
 		
@@ -214,11 +229,18 @@ a{
 	}
 	.nav{
         overflow: hidden;
-        background-color: #68A068;
 	}
 	.navbar{
             background-color: #68A068;
 	}
+	.navbar:after{
+	  visibility: hidden;
+	  display: block;
+	  font-size: 0;
+	  content: "\0020";
+	  clear: both;
+	  height: 0;
+	}	
 	.main{
 		clear: both;
 		width:100%;
