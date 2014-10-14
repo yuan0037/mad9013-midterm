@@ -22,19 +22,8 @@ h1, h2, h3{
 	padding: 10px 20px;
 	color: #000;
 }
-h1{
-	font-size: 3.6rem;	
-	font-family: Pacifico;
-}
-h2{
-	font-size: 3.0rem;	
-	font-family: Noto Serif;
-}
-h3{
-	font-size: 2.4rem;
-	font-family: Noto Serif;
-	color: #494949;	
-}
+
+
 
 p, li, a{
 	font-weight: 400;
@@ -62,6 +51,19 @@ a{
 ***********************************/
 
 @media (min-width: 1081px) {
+	h1{
+	font-size: 3.6rem;	
+	font-family: Pacifico;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: Noto Serif;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: Noto Serif;
+	color: #494949;	
+}
 	.wrapper{
 		/*background-color: #4ad353;	*/
         /*overflow: hidden;*/
@@ -119,6 +121,19 @@ a{
 }
 
 @media (min-width: 720px) and (max-width: 1080px) {
+	h1{
+	font-size: 2.6rem;	
+	font-family: Pacifico;
+}
+h2{
+	font-size: 2.4rem;	
+	font-family: Noto Serif;
+}
+h3{
+	font-size: 2.2rem;
+	font-family: Noto Serif;
+	color: #494949;	
+}
 		.wrapper{
 	/*	background-color: #fff;	*/
             background-color: #93d397;
@@ -170,6 +185,19 @@ a{
 }
 
 @media (min-width: 500px) and (max-width: 719px) {
+	h1{
+	font-size: 2.1rem;	
+	font-family: Pacifico;
+}
+h2{
+	font-size: 1.9rem;	
+	font-family: Noto Serif;
+}
+h3{
+	font-size: 1.7rem;
+	font-family: Noto Serif;
+	color: #494949;	
+}
 		.wrapper{
 		/*background-color: #fff;	*/
             background-color: #93d397;
@@ -219,6 +247,20 @@ a{
 }
 
 @media (max-width: 499px) {
+
+	h1{
+	font-size: 1.5rem;	
+	font-family: Pacifico;
+	}
+h2{
+	font-size: 1.4rem;	
+	font-family: Noto Serif;
+}
+h3{
+	font-size: 1.3rem;
+	font-family: Noto Serif;
+	color: #494949;	
+}
 		.wrapper{
 		/*background-color: #fff;	*/
             overflow: hidden;
